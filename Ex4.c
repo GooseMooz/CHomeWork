@@ -2,35 +2,18 @@
 #include <string.h>
 int repeatChecker(char*word)
 {
-    char letters[2];
+    char letter;
     int len = strlen(word);
     for(int i = 0; i < len; i++) {
         for(int j = 0; j < len; j++) {
             if(j != i){
                 if(word[i] == word[j]) {
-                    letters[0] = word[i];
-                    letters[1] = word[j];
+                    letter = word[i];
                 };
             };
         };
     };
-    return letters;
-};
-
-int repeatFix(char*firstWord, char*secondWord) {
-    int ok = 0;
-    int len = strlen(firstWord);
-    char letters[2];
-    for(int i = 0; i < len; i++) {
-        for(int j = 0; j < len; j++) {
-            if(j != i){
-                if(firstWord[i] == firstWord[j]) {
-                    // Повторение есть
-                }
-            }
-        };
-    };
-    return ok;
+    return letter;
 };
 
 int main() {
