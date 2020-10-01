@@ -39,6 +39,11 @@ int main() {
             };
         };
     };
+
+    if(repeatChecker(word1) != repeatChecker(word2)) {
+        cnt = 0;
+    };
+
     if(cnt / 2 == len) {
         printf("+");
     }
