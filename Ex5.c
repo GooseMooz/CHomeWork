@@ -22,7 +22,7 @@ int main() {
     printf("===Shift: \n");
     scanf("%d", &shift);
     printf("===");
-    int normalShift = shift % 32;
+    int normalShift = shift % 26;
 
     if(choice == 'Y') {
         printf("\nType your word: \n");
